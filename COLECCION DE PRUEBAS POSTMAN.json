@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "70675fd6-c97e-43c0-9a74-65f223a890d7",
+		"name": "GET GEO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37988455"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/search/sucursales_geopos/-104.8946/21.5107/10/km",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/search/sucursales_geopos/-104.8946/21.5107/10/km",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"search",
+						"sucursales_geopos",
+						"-104.8946",
+						"21.5107",
+						"10",
+						"km"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/clients/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"rfc\": \"RFC4789\",\r\n\"nombre\":\"Alejandro Perez\",\r\n\"Sucursal\":\"111\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/clients/add",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"clients",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET producto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/producto/1001/sucursal/111",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"producto",
+						"1001",
+						"sucursal",
+						"111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ventas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ventaId\":\"2001\",\r\n    \"productoId\":\"1003\",\r\n    \"cantidad\":\"2\",\r\n    \"costo_unitario\":\"60\",\r\n    \"rfc\":\"RFC12345\",\r\n    \"fecha\":\"20240922\",\r\n    \"hora\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/ventas/2024/sucursal/111",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ventas",
+						"2024",
+						"sucursal",
+						"111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sucursal-clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/sucursal/111/clientes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sucursal",
+						"111",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
